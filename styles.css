@@ -4,19 +4,21 @@ body {
     font-family: "IBM Plex Mono", monospace;
 }
 
-.hero-section {
+.container {
+    background-color: #000;
+    margin: 0 auto;
+    padding: 150px 125px 0 125px;
+}
+
+.container:first-child {
     min-height: 100vh;
+    padding: 0 124px 0 132px;
     background-image: url('../resources/Rectangle\ 1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 50%;
 
     position: relative;
-}
-
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
 }
 
 .about {
@@ -52,19 +54,16 @@ body {
     height: 103px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: "IBM Plex Mono";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
     letter-spacing: -0.6px;
 
     position: absolute;
-    top: 334px
+    top: 334px;
 }
 
 .introduction-title {
-    width: 919px;
+    max-width: 919px;
     height: 205px;
 
     color: #1BFF07;
@@ -76,4 +75,124 @@ body {
 
     position: absolute;
     top: 466px;
+}
+
+.title {
+    color: #FFF;
+    font-size: 55px;
+    line-height: normal;
+    letter-spacing: -1.65px;
+}
+
+.project {
+    width: 1150px;
+    height: 550px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.project:nth-last-child(2) {
+    margin-bottom: 80px;
+}
+
+.metric {
+    margin-top: 40px;
+    background-image: url('./resources/metric.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.nothing {
+    background-image: url('./resources/nothing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.toptrip {
+    background-image: url('./resources/toptrip.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.project-button {
+    padding: 10px 20px;
+    border-radius: 100px;
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    background-color: #1BFF07;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #000;
+    font-family: Manrope;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    
+    cursor: pointer;
+}
+
+.subtitle {
+    position: absolute;
+    top: 410px;
+    left: 50px;
+    color: #FFF;
+    font-size: 35px;
+    line-height: normal;
+    letter-spacing: -1.05px;
+}
+
+.subtitle-text {
+    position: absolute;
+    top: 461px;
+    left: 50px;
+    color: #FFF;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -0.9px;
+}
+
+.allprojects-btn {
+    width: 582px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #1BFF07;
+
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -0.9px;
+
+    cursor: pointer;
+}
+
+.competencies-title {
+    color: #1BFF07;
+    font-family: "IBM Plex Mono";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.05px;
+}
+
+.competencies-title:before {
+    margin-top: 80px;
+    margin-bottom: 15px;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 44px;
+    background-image: url('./resources/html.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
 }

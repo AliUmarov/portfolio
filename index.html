@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
       rel="stylesheet"
@@ -15,13 +21,23 @@
   <body>
     <section class="container">
       <header class="about">
-        <img class="logo" src="./resources/ORLOV.png" alt="Logo" />
+        <a href="#" class="logo">
+          <img class="logo" src="./resources/ORLOV.png" alt="Logo" />
+        </a>
         <nav class="navigation">
-          <ul class="navigation-lists">
-            <li class="navigation-link">портфолио</li>
-            <li class="navigation-link">компетенции</li>
-            <li class="navigation-link">услуги</li>
-            <li class="navigation-link">контакты</li>
+          <ul class="navigation-lists-wrapper">
+            <li class="navigation-links">
+              <a href="#projects" class="navigation-link">портфолио</a>
+            </li>
+            <li class="navigation-links">
+              <a href="#competencies" class="navigation-link">компетенции</a>
+            </li>
+            <li class="navigation-links">
+              <a href="#tasks" class="navigation-link">услуги</a>
+            </li>
+            <li class="navigation-links">
+              <a href="#contacts" class="navigation-link">контакты</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -34,26 +50,28 @@
       </h1>
     </section>
     <section class="container">
-      <h2 class="title">Самые свежие проекты</h2>
+      <h2 id="projects" class="title">Самые свежие проекты</h2>
       <div class="project metric">
-        <button class="project-button">дизайн интерьера</button>
+        <a href="https://aliumarov.github.io/metric/" class="project-link"
+          >дизайн интерьера</a
+        >
         <p class="subtitle">Метрика</p>
         <p class="subtitle-text">верстка, настройка</p>
       </div>
       <div class="project nothing">
-        <button class="project-button">презентация продукта</button>
+        <a href="#" class="project-link">презентация продукта</a>
         <p class="subtitle">Nothing</p>
         <p class="subtitle-text">верстка, настройка</p>
       </div>
       <div class="project toptrip">
-        <button class="project-button">заказ путешествий</button>
+        <a href="#" class="project-link">заказ путешествий</a>
         <p class="subtitle">TOPTRIP</p>
         <p class="subtitle-text">верстка</p>
       </div>
       <button class="allprojects-btn">Смотреть все проекты</button>
     </section>
     <section class="container">
-      <h2 class="title">Мои компетенции</h2>
+      <h2 id="competencies" class="title">Мои компетенции</h2>
       <div class="competencies-wrapper">
         <div class="competence">
           <p class="competence-title">HTML и CSS</p>
@@ -97,7 +115,9 @@
       </div>
     </section>
     <section class="container">
-      <p class="tasks-title">Помогаю реализовать широкий спектр задач</p>
+      <p id="tasks" class="tasks-title">
+        Помогаю реализовать широкий спектр задач
+      </p>
       <div class="tasks">
         <img
           class="tasks-image"
@@ -131,7 +151,7 @@
       <div class="tasks">
         <img
           class="tasks-image"
-          src="./resources/takecontrol.jpg"
+          src="./resources/phoneadaptive.jpg"
           alt="Разработка под ключ"
         />
         <div class="tasks__text-wrapper">
@@ -145,7 +165,59 @@
           </p>
         </div>
       </div>
-      ds
     </section>
+    <section class="container">
+      <div id="contacts" class="contacts__grey-background-wrapper">
+        <h1 class="contacts-title">
+          Для связи со мной заполните простую форму
+        </h1>
+        <input
+          class="contacts__name-input"
+          placeholder="Имя Фамилия"
+          type="text"
+        />
+        <br />
+        <input
+          class="contacts__email-input"
+          placeholder="example@mail.com"
+          type="email"
+        />
+        <br />
+        <button class="contacts__send-button">Отправить</button>
+        <img
+          class="contacts__image"
+          src="./resources/cuate.png"
+          alt="Иллюстрация в разделе контактов"
+        />
+      </div>
+    </section>
+    <footer class="container">
+      <div class="footer_white-background-wrapper">
+        <div class="footer__social-text-wrapper">
+          <p class="footer__name-text">
+            Портфолио фротнтенд-разработчика Саши Орлова
+          </p>
+          <ul class="footer__social-links-lists">
+            <li class="footer__social-links">
+              <a href="#" class="footer__social-link"> mail</a>
+            </li>
+            <li class="footer__social-links">
+              <a href="#" class="footer__social-link">telegram</a>
+            </li>
+            <li class="footer__social-links">
+              <a href="#" class="footer__social-link">instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright-policy-wrapper">
+          <p class="footer__copyright-text">Все права защищены. 2023</p>
+          <p class="footer__policy-text">
+            <a href="#" class="footer__policy-link"
+              >политика обработки данных</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

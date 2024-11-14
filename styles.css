@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 1400px;
   margin: 0 auto;
@@ -21,6 +25,17 @@ body {
   position: relative;
 }
 
+.container:nth-last-of-type(1) {
+  padding: 0;
+  padding-top: 250px;
+  padding-bottom: 10px;
+}
+
+.container:nth-last-child(2) {
+  padding: 0;
+  padding-top: 0;
+}
+
 .about {
   position: relative;
 }
@@ -40,13 +55,22 @@ body {
   text-align: end;
 }
 
-.navigation-link {
+.navigation-links {
   display: inline-block;
   margin-right: 50px;
 }
 
-.navigation-link:nth-last-child(1) {
+.navigation-links:nth-last-child(1) {
   margin-right: 0;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation-link:hover {
+  color: #1bff07;
 }
 
 .introduction {
@@ -117,7 +141,7 @@ body {
   background-position: 50% 50%;
 }
 
-.project-button {
+.project-link {
   padding: 10px 20px;
   border-radius: 100px;
   position: absolute;
@@ -129,13 +153,20 @@ body {
   align-items: center;
   gap: 10px;
 
+  text-decoration: none;
   color: #000;
   font-family: Manrope;
   font-size: 20px;
   line-height: normal;
   letter-spacing: -0.6px;
-
   cursor: pointer;
+}
+
+.project-link:hover {
+  background: #000;
+  border: 1px solid #1bff07;
+  color: #1bff07;
+  text-align: center;
 }
 
 .subtitle {
@@ -170,8 +201,14 @@ body {
   font-size: 30px;
   line-height: normal;
   letter-spacing: -0.9px;
-
   cursor: pointer;
+}
+
+.allprojects-btn:hover {
+  background: #000;
+  border: 1px solid #1bff07;
+  color: #1bff07;
+  text-align: center;
 }
 
 .competencies-wrapper {
@@ -258,7 +295,7 @@ body {
 }
 
 .tasks:nth-last-child(1) {
-    margin-bottom: 150px;
+  margin-bottom: 0;
 }
 
 .tasks-title {
@@ -299,4 +336,154 @@ body {
   font-size: 22px;
   line-height: normal;
   letter-spacing: -0.66px;
+}
+
+.contacts__grey-background-wrapper {
+  max-width: 1400px;
+  height: 717px;
+  padding: 100px 124px 0 132px;
+  border-radius: 30px;
+  background-color: #191c19;
+
+  position: relative;
+}
+
+.contacts-title {
+  width: 553px;
+  margin-bottom: 60px;
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 100% */
+  letter-spacing: -1.8px;
+}
+
+.contacts__name-input {
+  width: 567px;
+  height: 60px;
+  margin-bottom: 26px;
+  padding-left: 40px;
+  border-radius: 1000px;
+  background: #3b3d3b;
+
+  color: #fff;
+  text-align: left;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+
+.contacts__email-input {
+  width: 567px;
+  height: 60px;
+  margin-bottom: 60px;
+  padding-left: 40px;
+  border-radius: 1000px;
+  background: #3b3d3b;
+
+  color: #fff;
+  text-align: left;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+
+.contacts__send-button {
+  width: 450px;
+  height: 70px;
+  border-radius: 10px;
+  background: #1bff07;
+
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.66px;
+  cursor: pointer;
+}
+
+.contacts__send-button:hover {
+  background: #000;
+  border: 1px solid #1bff07;
+  color: #1bff07;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+
+.contacts__image {
+  width: 580px;
+  height: 715px;
+
+  position: absolute;
+  bottom: 4px;
+  left: 820px;
+}
+
+.footer_white-background-wrapper {
+  height: 235px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 100px 124px 162px;
+
+  background-color: #fff;
+  color: #000;
+  font-family: Manrope;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+
+.footer__social-text-wrapper {
+  margin-bottom: 66px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-links-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-links {
+  margin-right: 24px;
+}
+
+.footer__social-links:last-child {
+  margin-right: 0;
+}
+
+.footer__social-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__social-link:hover {
+  color: #1bff07;
+}
+
+.footer__copyright-policy-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-family: Manrope;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  opacity: 0.5;
+}
+
+.footer__policy-link {
+  text-decoration: none;
+  color: #000;
+  font-family: Manrope;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  opacity: 0.5;
 }

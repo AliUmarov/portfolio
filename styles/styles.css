@@ -11,7 +11,7 @@ body {
 .container {
   background-color: #000;
   margin: 0 auto;
-  padding: 150px 125px 0 125px;
+  padding: 150px 125px 10px 125px;
 }
 
 .container:first-child {
@@ -27,7 +27,6 @@ body {
 
 .container:nth-last-of-type(1) {
   padding: 0;
-  padding-top: 10px;
 }
 
 .container:nth-last-child(2) {
@@ -339,7 +338,7 @@ body {
 
 .contacts__grey-background-wrapper {
   max-width: 1400px;
-  height: 717px;
+  height: 650px;
   padding: 100px 124px 0 132px;
   border-radius: 30px;
   background-color: #191c19;
